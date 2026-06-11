@@ -12,6 +12,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    app.UseSwaggerUI(o => o.SwaggerEndpoint("/openapi/v1.json","Zadanie5"));
     app.MapOpenApi();
 }
 
