@@ -1,0 +1,18 @@
+@PJATK_APBD_Cw5_s29766_HostAddress = http://localhost:5119
+
+GET {{PJATK_APBD_Cw5_s29766_HostAddress}}/api/patients?search=an
+Accept: application/json
+
+###
+
+POST {{PJATK_APBD_Cw5_s29766_HostAddress}}/api/patients/90010112345/bedassignments
+Content-Type: application/json
+
+{
+  "from": "2026-05-20T14:00:00",
+  "to": "2026-05-30T10:00:00",
+  "bedType": "Standard",
+  "ward": "Kardiologia"
+}
+
+###
